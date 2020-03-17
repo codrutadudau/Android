@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="welcome_message">Welcome to my Online Shop!</string>
+    <string name="MainDescription">Main Description</string>
+    <string name="MainProducts">Main Products</string>
+    <string name="SecondDescription">SecondDescription</string>
+    <string name="landscape_description">Shop Description</string>
+</resources>
