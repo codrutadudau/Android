@@ -3,6 +3,11 @@
     <string name="welcome_message">Welcome to my Online Shop!</string>
     <string name="MainDescription">Main Description</string>
     <string name="MainProducts">Main Products</string>
-    <string name="SecondDescription">SecondDescription</string>
+    <string name="SecondDescription">Messages</string>
     <string name="landscape_description">Shop Description</string>
+    <string name="main_categories">Main Categories:</string>
+    <string name="text"></string>
+    <string name="btn">Send</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
 </resources>

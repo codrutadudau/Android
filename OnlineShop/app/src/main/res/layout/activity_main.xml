@@ -6,14 +6,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="send us a message :)"
+        android:layout_margin="20dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/btn"
+        android:onClick="sendMsg" />
+    <Button
+        android:id="@+id/dialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open dialog"
+        android:layout_margin="20dp"
+        android:onClick="openDialog"/>
     <TextView
         android:id="@+id/textview3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:text="@string/landscape_description"
-        android:textColor="#a9a9a9"
-        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:text="@string/main_categories"
+        android:textColor="#560027"
+        android:textSize="30sp"
         android:textStyle="bold" />
     <ListView
         android:layout_width="match_parent"
