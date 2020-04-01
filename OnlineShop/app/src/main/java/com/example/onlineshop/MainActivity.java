@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
@@ -77,16 +79,10 @@ public boolean onCreateOptionsMenu(Menu menu) {
 public boolean onOptionsItemSelected(@NonNull MenuItem item) {
     switch(item.getItemId()){
         case R.id.item1:
-            Toast.makeText(this, "Option 1 selected.", Toast.LENGTH_SHORT).show();
+            openLightSensor();
             return true;
         case R.id.item2:
-            Toast.makeText(this, "Option 2 selected.", Toast.LENGTH_SHORT).show();
-            return true;
-        case R.id.item3:
-            Toast.makeText(this, "Option 3 selected.", Toast.LENGTH_SHORT).show();
-            return true;
-        case R.id.item4:
-            Toast.makeText(this, "Option 4 selected.", Toast.LENGTH_SHORT).show();
+            openLocation();
             return true;
         default:
             return super.onOptionsItemSelected(item);
@@ -169,6 +165,15 @@ public void openDialog(View view){
         alert.create().show();
 }
 
+public void openLightSensor(){
+        Intent intent = new Intent(MainActivity.this,Sensor_activity.class);
+        startActivity(intent);
+}
+
+public void openLocation(){
+        Intent intent = new Intent(MainActivity.this,LocationActivity.class);
+        startActivity(intent);
+    }
 
 class MyAdapter extends ArrayAdapter<String>{
 
