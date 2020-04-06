@@ -84,6 +84,9 @@ public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         case R.id.item2:
             openLocation();
             return true;
+        case R.id.item3:
+            cameraCapture();
+            return true;
         default:
             return super.onOptionsItemSelected(item);
     }
@@ -173,7 +176,12 @@ public void openLightSensor(){
 public void openLocation(){
         Intent intent = new Intent(MainActivity.this,LocationActivity.class);
         startActivity(intent);
-    }
+}
+
+public void cameraCapture(){
+        Intent intent = new Intent(MainActivity.this,CameraActivity.class);
+        startActivity(intent);
+}
 
 class MyAdapter extends ArrayAdapter<String>{
 
